@@ -28,7 +28,7 @@ pip install wordcloud
 
 - [ ] Backend profesional
 - [ ] Método que reciba la ruta del archivo y aplique la lógica de resumen
-- [ ] Leer archivos PDS, DOCS, TXT, POWERPOINT
+- [ ] Leer archivos PDFS, DOCS, TXT, POWERPOINT
 - [ ] Frontend intuitivo y fácil de usar
 - [ ] Opción para descargar el resumen en **Word**, **PPTX** **TXT** y **PDF**
 - [ ] Generación de Imágen de la Nube de Palabras
