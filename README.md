@@ -14,6 +14,7 @@ pip install sumy nltk
 pip install langdetect
 pip install deep-translator
 pip install wordcloud
+```
 
 ## Funcionalidades implementadas
 
