@@ -1,19 +1,23 @@
 # Ejecutar pip install sumy nltk
 # Ejecutar pip install langdetect
 # Ejecutar pip install deep-translator
-import asyncio
+# Ejecutar pip install wordcloud
+# Ejecutar pip install stopwordsiso
 import nltk
 import re
 import os
-
+# Descargas necesarias, se pueden quitar del script, si se ejecuto solamente una vez
 nltk.download('punkt')
 nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 from langdetect import detect
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer
 from deep_translator import GoogleTranslator
+from wordcloud import WordCloud
+from nltk.corpus import stopwords
 
 # Crear el resumidor
 resumidor = LexRankSummarizer()
@@ -39,7 +43,7 @@ mapa_idiomas = {
     'pt': 'portuguese',
 }
 tokenizer_idioma = mapa_idiomas.get(idioma_detectado, 'english')  # inglés por defecto
-
+stopwords_idioma = set(stopwords.words(mapa_idiomas.get(idioma_detectado, 'english'))) # palabras que no se toman en cuenta en la nube de palabras respecto a idioma
 # Contar palabras del documento original
 palabras_originales = len(texto.split())
 
@@ -74,7 +78,17 @@ with open("resumen.txt", "w", encoding="utf-8") as f:
     f.write(titulo + "\n\n")
     f.write(resumen_final)
 
+# Crear objeto WordCloud sin generar imagen
+wordcloud = WordCloud(width=800, height=400, background_color="white", stopwords=stopwords_idioma).generate(resumen_final)
+
+# Obtener las palabras y sus frecuencias como diccionario
+frecuencias = wordcloud.words_
+
+# Convertir a lista de palabras más frecuentes (Top 15)
+palabras_mas_comunes = list(frecuencias.keys())[:15]
+
 print("Resumen guardado en 'resumen.txt'")
 print("Idioma detectado:", idioma_detectado)
 print("Palabras del documento original:", palabras_originales)
 print("Palabras del resumen:", palabras_resumen)
+print("Nube de palabras:", palabras_mas_comunes)
