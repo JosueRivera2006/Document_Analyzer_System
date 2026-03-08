@@ -32,7 +32,3 @@ pip install wordcloud
 - [ ] Frontend intuitivo y fácil de usar
 - [ ] Opción para descargar el resumen en **Word**, **PPTX** **TXT** y **PDF**
 - [ ] Generación de Imágen de la Nube de Palabras
-
-- Mejorar la interfaz de usuario para que sea más amigable
-- Implementar el backend que reciba archivos y genere los resúmenes
-- Añadir opciones de descarga en distintos formatos
