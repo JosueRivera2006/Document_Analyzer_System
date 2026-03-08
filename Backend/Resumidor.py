@@ -2,7 +2,6 @@
 # Ejecutar pip install langdetect
 # Ejecutar pip install deep-translator
 # Ejecutar pip install wordcloud
-# Ejecutar pip install stopwordsiso
 import nltk
 import re
 import os
