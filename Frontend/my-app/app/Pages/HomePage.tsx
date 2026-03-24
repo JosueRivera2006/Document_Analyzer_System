@@ -1,12 +1,12 @@
 'use client';
 
-import Navbar_ from "../Molecules/Navbar_";
-
-export default function login() {
+export default function Homepage() {
 
 return(
-    <div>
-        <Navbar_/>
+    <div className="bg-white min-h-screen">
+        
     </div>
 )
 }
+
+

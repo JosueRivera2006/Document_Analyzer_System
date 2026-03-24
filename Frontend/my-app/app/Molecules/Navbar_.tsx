@@ -2,12 +2,14 @@ import React from 'react';
 
 const Navbar_ = () => {
     return (
-        <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-        </ul>
+        <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-md rounded-b-lg">      {/*Titulo */}
+            <h1 className="text-3xl font-bold">Document { }Analyzer</h1>
+            {/*Items navbar */}
+            <div className="space-x-6">
+
+            </div>
+
+        </nav>
     );
 };
 
