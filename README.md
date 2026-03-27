@@ -14,6 +14,9 @@ pip install sumy nltk
 pip install langdetect
 pip install deep-translator
 pip install wordcloud
+pip install python-docx PyPDF2 python-pptx
+pip install fastapi
+pip install reportlab
 ```
 
 ## Funcionalidades implementadas
@@ -24,11 +27,8 @@ pip install wordcloud
 - [x] Backend profesional
 - [x] Método que reciba la ruta del archivo y aplique la lógica de resumen
 - [x] Leer archivos PDFS, DOCS, TXT, POWERPOINT
+- [x] Frontend intuitivo y fácil de usar
+- [x] Opción para descargar el resumen en **Word**, **PPTX** **TXT** y **PDF**
+- [x] Generación de Imágen de la Nube de Palabras
 
----
 
-## Funcionalidades pendientes
-
-- [ ] Frontend intuitivo y fácil de usar
-- [ ] Opción para descargar el resumen en **Word**, **PPTX** **TXT** y **PDF**
-- [ ] Generación de Imágen de la Nube de Palabras
