@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Homepage from "./Pages/HomePage";
+import Navbar_ from "./Molecules/Navbar_";
+import UploadFile from "./Pages/UploadFile";
 
 export default function Home() {
   return (
-    <div>
-      <Homepage/>
+    <div className="app-shell">
+      <Navbar_ />
+      <main className="app-container">
+        <UploadFile />
+      </main>
     </div>
   );
 }

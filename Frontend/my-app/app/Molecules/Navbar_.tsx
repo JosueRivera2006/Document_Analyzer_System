@@ -1,16 +1,30 @@
-import React from 'react';
+"use client";
+import React from "react";
+import Button from "../Atoms/Button_";
 
-const Navbar_ = () => {
-    return (
-        <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-md rounded-b-lg">      {/*Titulo */}
-            <h1 className="text-3xl font-bold">Document { }Analyzer</h1>
-            {/*Items navbar */}
-            <div className="space-x-6">
+const Navbar_: React.FC = () => {
+  return (
+    <header className="navbar">
+      <div className="navbar-inner">
+        {/* Marca */}
+        <div className="brand">
+          <div className="brand-logo">DA</div>
+          <div>
+            <div className="brand-text-main">Document Analyzer</div>
+            <div className="brand-text-sub">IA para resumir tus archivos</div>
+          </div>
+        </div>
 
-            </div>
-
+        {/* Links / acciones */}
+        <nav className="nav-links">
+          <span>Cómo funciona</span>
+          <span>Formatos</span>
+          <span className="nav-link-pill">Beta privada</span>
+          <Button text="Iniciar sesión" variant="primary" />
         </nav>
-    );
+      </div>
+    </header>
+  );
 };
 
 export default Navbar_;
