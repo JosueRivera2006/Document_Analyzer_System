@@ -33,11 +33,18 @@ from nltk.corpus import stopwords
 from docx import Document
 import PyPDF2
 from pptx import Presentation
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="API de Resumen de Documentos",
     description="Sube un documento y obtén un resumen automático con análisis de palabras clave.",
     version="1.0.0"
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Crear el resumidor
