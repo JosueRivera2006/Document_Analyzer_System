@@ -29,6 +29,5 @@ pip install reportlab
 - [x] Leer archivos PDFS, DOCS, TXT, POWERPOINT
 - [x] Frontend intuitivo y fácil de usar
 - [x] Opción para descargar el resumen en **Word**, **PPTX** **TXT** y **PDF**
-- [x] Generación de Imágen de la Nube de Palabras
 
 
