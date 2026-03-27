@@ -14,14 +14,6 @@ const Navbar_: React.FC = () => {
             <div className="brand-text-sub">IA para resumir tus archivos</div>
           </div>
         </div>
-
-        {/* Links / acciones */}
-        <nav className="nav-links">
-          <span>Cómo funciona</span>
-          <span>Formatos</span>
-          <span className="nav-link-pill">Beta privada</span>
-          <Button text="Iniciar sesión" variant="primary" />
-        </nav>
       </div>
     </header>
   );
