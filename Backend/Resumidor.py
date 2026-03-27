@@ -6,6 +6,7 @@
 # Ejecutar pip install python-docx PyPDF2 python-pptx
 # Ejecutar pip install fastapi
 # Ejecutar pip install reportlab
+# Mondongo
 import re
 import os
 import nltk
